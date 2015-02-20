@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    -var title = "<3 TITLEs are AWESOME!";
+    -var domain="http://nulljack.github.io.com";
+    -var path="";
+    -var path_level=0;
+    -var path_level_func=function(a){var e="";if(0===a)e+="./";else for(var l=0;a>l;l++)e+="../";return e};
+    -var path_level2 =function(a){var e="";if(0===a)e+="./";else for(var l=0;a>l;l++)e+="../";return e}(path_level);
+    link(href=path_level2+'css/main.css', rel='stylesheet')
+    link(href=path_level2+'humans.txt', rel='author')
+    script(src='http://code.jquery.com/jquery-2.1.1.min.js', comment='jQuery')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.16/require.min.js')
+    meta(charset='utf-8')
+    meta(content='Home Page', name='description')
+    meta(content='width=device-width, initial-scale=1', name='viewport')
+    title= title
+  body
+    #bootstrap_header
+    #content
+    p
+      span
+        span I've been dating and being in love with 
+          span(title='Kitty^') Karo
+          |  for
+          span#counter_1 00 days, 00 months, and 00 years
+          |  now!
+    script(src=path_level2+'js/main.js')
+    script
+      | 
+      | bootstrap1($('#bootstrap_header'));
