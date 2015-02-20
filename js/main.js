@@ -1,2 +1,2 @@
 // Bootstrap...
-requirejs(['http://jacknull.github.io/js/bootstrap.js']);
+requirejs(['./bootstrap.js']);
