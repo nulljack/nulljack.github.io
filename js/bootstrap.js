@@ -41,5 +41,5 @@ function bootstrap_custom1(elem) {
     bootstrap += "<\/div>";
     newline_html();
     bootstrap += "<\/nav>";
-    $(elem).text(html)
+    $(elem).html(bootstrap);
 }
