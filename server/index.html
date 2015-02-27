@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page for Null's surf Server!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="author" href="humans.txt">
+  </head>
+  <body>
+    <nav>
+      <style>
+      body {
+      padding-top: 50px;
+      }
+      </style>
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header"><a class="navbar-brand" href="#">Null's Surf Server</a></div>
+        <ul class="nav navbar-nav">
+          <li><a href="http://nulljack.github.io/server/" title="Home page for the server">Home</a></li>
+          <li><a href="#" id="about_btn">About</a></li>
+        </ul>
+      </div>
+      <div id="about_mdl" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">×</button>
+              <h3>Modal header</h3>
+            </div>
+            <div class="modal-body">
+              <img src="//placehold.it/200x150/2255EE">
+            </div>
+            <div class="modal-footer">
+              <button class="btn" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+      $('#about_btn').click(function(){
+      $('#about_mdl').modal({show:true})
+      });
+      </script>
+    </nav>
+    <div class="container">
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores
+        eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+        sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+      </p></div>
+      <script src="js/main.js"></script>
+    </body>
+  </html>
