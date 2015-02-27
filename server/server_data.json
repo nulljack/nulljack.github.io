@@ -2,7 +2,9 @@
     "game": "Counter Strike Global Offensive",
     "Host": {
         "SteamProfile": "",
-        "Name": "Jack",
-        "Name_alias": "Null"
-    }
+        "name": "Jack",
+        "name_alias": "Null"
+    },
+    "maxplayers": 24,
+    "maps": []
 }

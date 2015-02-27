@@ -40,14 +40,33 @@ padding-top: 50px;
 <button class="btn" data-dismiss="modal">Close</button>
 </div>
 </div>
-<!-- <script type="text/javascript">
-$.getJSON( "server_data.json", function( data ) {
-var text = "";
-var text_newline = function(){text += '\n'}
-text += 'Game: '+data.game;
-$('#about_mdl .modal-body').text( text );
+<script type="text/javascript">
+$.getJSON("server_data.json", function(data) {
+    var text = "";
+    var text_newline = function() {
+        text += '\n'
+    }
+    text += 'Game: ' + data.game;
+    text_newline();
+    text += "Host: " + data.host.name;
+    text_newline();
+    text += "Maxplayers: " + data.maxplayers;
+    text_newline();
+    text_newline();
+    text += "Maps;"
+    if ((data.maps)[0] === "" && (data.maps).length === 0) {
+        text_newline();
+        text += "[NONE IN THE ARRAY]";
+    } else {
+        for (var i = 0; i < (data.maps).length; i++) {
+            text_newline();
+            text += "- " + (data.maps)[i]
+        }
+    }
+    $('#about_mdl .modal-body').text(text);
 });
-</script> -->
+
+</script>
 </div>
 <script>
 $('#about_btn').click(function(){
