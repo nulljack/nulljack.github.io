@@ -1,4 +1,0 @@
-/* SITE */
-  Last update: N/A
-  Doctype: HTML5
-  IDE: Sublime Text
